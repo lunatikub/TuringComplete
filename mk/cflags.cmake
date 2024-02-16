@@ -1,0 +1,12 @@
+set(
+  CFLAGS
+  -Wall
+  -Werror
+  -Wextra
+  -Wundef
+  -Wshadow
+  -Wpointer-arith
+  -Wcast-align
+  -Wstrict-prototypes
+  -Wwrite-strings
+)
