@@ -1,6 +1,9 @@
 set(TEST elementary_gates)
 include(${CMAKE_SOURCE_DIR}/mk/test.cmake)
 
+set(TEST byte)
+include(${CMAKE_SOURCE_DIR}/mk/test.cmake)
+
 add_custom_target(
   tests
   DEPENDS ${TESTS}
