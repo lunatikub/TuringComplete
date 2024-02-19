@@ -6,24 +6,7 @@
 
 /**
  * XNOR gate (biconditional).
- *
- * Distinctive shape (IEEE Std 91/91a-1991):
- *      +----+
- * A ---|    |\
- *      | =1 |--- Q
- * B ---|    |
- *      +----+
- *
- * Thuth table:
- * +---+---+---+
- * | A | B | Q |
- * +---+---+---+
- * | 0 | 0 | 1 |
- * | 1 | 0 | 0 |
- * | 1 | 1 | 0 |
- * | 1 | 1 | 1 |
- * +---+---+---+
- *
+ * See advanced documentation `logic_gate` for more details.
  */
 static bit_t xnor(bit_t A, bit_t B)
 {

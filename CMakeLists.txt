@@ -8,6 +8,7 @@ project(
 
 include(mk/sources.cmake)
 include(mk/cflags.cmake)
+include(mk/doc.cmake)
 
 enable_testing()
 add_subdirectory(tests)

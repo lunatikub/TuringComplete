@@ -48,13 +48,6 @@ typedef struct transistor {
  *                 o
  *                ///
  *
- * Distinctive shape (IEEE Std 91/91a-1991):
- *      +----+
- * A ---|    |\
- *      | &  |--- Q
- * B ---|    |
- *      +----+
- *
  * Thuth table:
  * +---+---+---+
  * | A | B | Q |

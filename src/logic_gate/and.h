@@ -5,25 +5,8 @@
 #include "logic_gate/not.h"
 
 /**
- * AND gate (conjunction).
- *
- * Distinctive shape (IEEE Std 91/91a-1991):
- *      +----+
- * A ---|    |
- *      | &  |--- Q
- * B ---|    |
- *      +----+
- *
- * Thuth table:
- * +---+---+---+
- * | A | B | Q |
- * +---+---+---+
- * | 0 | 0 | 0 |
- * | 1 | 0 | 0 |
- * | 1 | 1 | 0 |
- * | 1 | 1 | 1 |
- * +---+---+---+
- *
+ * AND gate (conjunction) construction from NAND gate.
+ * See advanced documentation `logic_gate` for more details.
  */
 static bit_t and(bit_t A, bit_t B)
 {
