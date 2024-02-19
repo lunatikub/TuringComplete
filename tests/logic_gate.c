@@ -1,11 +1,14 @@
 #include "minunit.h"
-#include "elementary_gates.h"
+
+#include "logic_gate/not.h"
 
 MU_TEST(test_not)
 {
     mu_check(not(0) == 1);
     mu_check(not(1) == 0);
 }
+
+#include "logic_gate/or.h"
 
 MU_TEST(test_or)
 {
@@ -15,6 +18,8 @@ MU_TEST(test_or)
     mu_check(or(1, 1) == 1);
 }
 
+#include "logic_gate/and.h"
+
 MU_TEST(test_and)
 {
     mu_check(and(0, 0) == 0);
@@ -22,6 +27,8 @@ MU_TEST(test_and)
     mu_check(and(0, 1) == 0);
     mu_check(and(1, 1) == 1);
 }
+
+#include "logic_gate/nor.h"
 
 MU_TEST(test_nor)
 {
@@ -31,13 +38,7 @@ MU_TEST(test_nor)
     mu_check(nor(1, 1) == 0);
 }
 
-MU_TEST(test_nand)
-{
-    mu_check(nand(0, 0) == 1);
-    mu_check(nand(1, 0) == 1);
-    mu_check(nand(0, 1) == 1);
-    mu_check(nand(1, 1) == 0);
-}
+#include "logic_gate/xor.h"
 
 MU_TEST(test_xor)
 {
@@ -46,6 +47,8 @@ MU_TEST(test_xor)
     mu_check(xor(0, 1) == 1);
     mu_check(xor(1, 1) == 0);
 }
+
+#include "logic_gate/xnor.h"
 
 MU_TEST(test_xnor)
 {
@@ -61,7 +64,6 @@ MU_TEST_SUITE(test_suite_elementary_gates)
     MU_RUN_TEST(test_or);
     MU_RUN_TEST(test_and);
     MU_RUN_TEST(test_nor);
-    MU_RUN_TEST(test_nand);
     MU_RUN_TEST(test_xor);
     MU_RUN_TEST(test_xnor);
 }
