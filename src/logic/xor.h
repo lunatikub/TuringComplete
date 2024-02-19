@@ -1,13 +1,13 @@
 #ifndef XOR_H_
 # define XOR_H_
 
-#include "logic_gate/not.h"
-#include "logic_gate/and.h"
-#include "logic_gate/or.h"
+#include "logic/not.h"
+#include "logic/and.h"
+#include "logic/or.h"
 
 /**
  * XOR gate (exclusive).
- * See advanced documentation `logic_gate` for more details.
+ * See advanced documentation `logic` for more details.
  */
 static bit_t xor(bit_t A, bit_t B)
 {

@@ -1,11 +1,11 @@
 #ifndef NOR_H_
 # define NOR_H_
 
-#include "logic_gate/not.h"
+#include "logic/not.h"
 
 /**
  * NOR gate (joint denial).
- * See advanced documentation `logic_gate` for more details.
+ * See advanced documentation `logic` for more details.
  */
 static bit_t nor(bit_t A, bit_t B)
 {

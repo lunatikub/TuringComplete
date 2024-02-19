@@ -1,7 +1,7 @@
 set(TEST fundamental)
 include(${CMAKE_SOURCE_DIR}/mk/test.cmake)
 
-set(TEST logic_gate)
+set(TEST logic)
 include(${CMAKE_SOURCE_DIR}/mk/test.cmake)
 
 add_custom_target(

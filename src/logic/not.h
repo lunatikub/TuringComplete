@@ -5,7 +5,7 @@
 
 /**
  * NOT gate (inverter).
- * See advanced documentation `logic_gate` for more details.
+ * See advanced documentation `logic` for more details.
  */
 static bit_t not(bit_t A)
 {

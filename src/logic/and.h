@@ -2,11 +2,11 @@
 # define AND_H_
 
 #include "fundamental/nand.h"
-#include "logic_gate/not.h"
+#include "logic/not.h"
 
 /**
  * AND gate (conjunction) construction from NAND gate.
- * See advanced documentation `logic_gate` for more details.
+ * See advanced documentation `logic` for more details.
  */
 static bit_t and(bit_t A, bit_t B)
 {

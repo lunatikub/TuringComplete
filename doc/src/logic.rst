@@ -1,8 +1,8 @@
-==========
-Logic gate
-==========
+=====
+Logic
+=====
 
-The goal is to build all `logic gates <https://en.wikipedia.org/wiki/Logic_gate>`_ exclusively with a combination of NAND gate(s).
+The goal is to build all `logic gates <https://en.wikipedia.org/wiki/logic>`_ exclusively with a combination of NAND gate(s).
 It is called: **Univeral logic gates**.
 
 Charles Sanders Peirce (during 1880–1881) showed that NOR gates alone (or alternatively NAND gates alone) can be used to reproduce the functions of all the other logic gates, but his work on it was unpublished until 1933. The first published proof was by Henry M. Sheffer in 1913, so the NAND logical operation is sometimes called `Sheffer stroke <https://en.wikipedia.org/wiki/Sheffer_stroke>`_
@@ -123,78 +123,81 @@ Basic Gates
              :width: 300
              :align: center
 
+Constructed Gates
+=================
+
 .. warning::
 
    All following logic gates must be implemented based on the NAND gate. We can also use other logic gates, either if they are exclusively constructed using the NAND gate or if they are constructed using other gates which, in turn, are built with the NAND gate, and so forth.
 
-NOT gate construction
-=====================
+NOT
+---
 
 .. image:: ../images/not_construction.png
         :width: 300
         :align: center
 
-.. literalinclude:: ../../src/logic_gate/not.h
+.. literalinclude:: ../../src/logic/not.h
    :language: c
    :emphasize-lines: 12
    :linenos:
 
-OR gate construction
-=====================
+OR
+--
 
 .. image:: ../images/or_construction.png
         :width: 300
         :align: center
 
-.. literalinclude:: ../../src/logic_gate/or.h
+.. literalinclude:: ../../src/logic/or.h
    :language: c
    :emphasize-lines: 13
    :linenos:
 
-AND gate construction
-=====================
+AND
+---
 
 .. image:: ../images/and_construction.png
         :width: 300
         :align: center
 
-.. literalinclude:: ../../src/logic_gate/and.h
+.. literalinclude:: ../../src/logic/and.h
    :language: c
    :emphasize-lines: 13
    :linenos:
 
-NOR gate construction
-=====================
+NOR
+---
 
 .. image:: ../images/nor_construction.png
         :width: 300
         :align: center
 
-.. literalinclude:: ../../src/logic_gate/nor.h
+.. literalinclude:: ../../src/logic/nor.h
    :language: c
    :emphasize-lines: 12
    :linenos:
 
-XOR gate construction
-=====================
+XOR
+---
 
 .. image:: ../images/xor_construction.png
         :width: 400
         :align: center
 
-.. literalinclude:: ../../src/logic_gate/xor.h
+.. literalinclude:: ../../src/logic/xor.h
    :language: c
    :emphasize-lines: 14-15
    :linenos:
 
-XNOR gate construction
-======================
+XNOR
+----
 
 .. image:: ../images/xnor_construction.png
         :width: 300
         :align: center
 
-.. literalinclude:: ../../src/logic_gate/xnor.h
+.. literalinclude:: ../../src/logic/xnor.h
    :language: c
    :emphasize-lines: 13
    :linenos:

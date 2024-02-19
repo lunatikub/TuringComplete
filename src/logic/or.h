@@ -2,11 +2,11 @@
 # define OR_H_
 
 #include "fundamental/nand.h"
-#include "logic_gate/not.h"
+#include "logic/not.h"
 
 /**
  * OR gate (disjunction) construction from NAND gate.
- * See advanced documentation `logic_gate` for more details.
+ * See advanced documentation `logic` for more details.
  */
 static bit_t or(bit_t A, bit_t B)
 {
