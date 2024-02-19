@@ -5,25 +5,8 @@
 #include "logic_gate/not.h"
 
 /**
- * OR gate (disjunction).
- *
- * Distinctive shape (IEEE Std 91/91a-1991):
- *      +----+
- * A ---|    |
- *      |>=1 |--- Q
- * B ---|    |
- *      +----+
- *
- * Thuth table:
- * +---+---+---+
- * | A | B | Q |
- * +---+---+---+
- * | 0 | 0 | 0 |
- * | 1 | 0 | 1 |
- * | 1 | 1 | 1 |
- * | 1 | 1 | 1 |
- * +---+---+---+
- *
+ * OR gate (disjunction) construction from NAND gate.
+ * See advanced documentation `logic_gate` for more details.
  */
 static bit_t or(bit_t A, bit_t B)
 {
