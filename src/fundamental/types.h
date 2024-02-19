@@ -16,9 +16,10 @@ typedef uint8_t bit_t;
 typedef uint8_t byte_t;
 
 /**
+ * Representation of a byte with 8 bits.
  * By convention, index 0 is the most significant bit.
- * number: [10101010] (0xaa)
- * index:  [01234567]
+ * number: [ 1, 0, 1, 0, 1, 0, 1, 0 ] (0xaa)
+ * index:  [ 0  1  2  3  4  5  6  7]
  */
 typedef bit_t bit8_t[8];
 

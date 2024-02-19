@@ -1,6 +1,16 @@
 #include "minunit.h"
-#include "byte_splitter.h"
-#include "byte_maker.h"
+
+#include "fundamental/nand.h"
+
+MU_TEST(test_nand)
+{
+    mu_check(nand(0, 0) == 1);
+    mu_check(nand(1, 0) == 1);
+    mu_check(nand(0, 1) == 1);
+    mu_check(nand(1, 1) == 0);
+}
+
+#include "fundamental/byte_splitter.h"
 
 MU_TEST(test_byte_splitter)
 {
@@ -12,6 +22,8 @@ MU_TEST(test_byte_splitter)
              o[4] == 1 && o[6] == 1 &&
              o[5] == 0 && o[7] == 0);
 }
+
+#include "fundamental/byte_maker.h"
 
 MU_TEST(test_byte_maker)
 {
@@ -30,8 +42,9 @@ MU_TEST(test_byte_eq)
     mu_check(byte == 12);
 }
 
-MU_TEST_SUITE(test_suite_byte)
+MU_TEST_SUITE(test_suite_fundamental)
 {
+    MU_RUN_TEST(test_nand);
     MU_RUN_TEST(test_byte_splitter);
     MU_RUN_TEST(test_byte_maker);
     MU_RUN_TEST(test_byte_eq);
@@ -39,7 +52,7 @@ MU_TEST_SUITE(test_suite_byte)
 
 int main(int argc, char *argv[])
 {
-	MU_RUN_SUITE(test_suite_byte);
-	MU_REPORT();
-	return MU_EXIT_CODE;
+    MU_RUN_SUITE(test_suite_fundamental);
+    MU_REPORT();
+    return MU_EXIT_CODE;
 }
